@@ -49,3 +49,28 @@ console.log(positivNumbers);
 const array = ["alice", "bob", "charlie", "david"];
 const upperCaseNames = array.map((el) => el.toUpperCase());
 console.log(upperCaseNames);
+
+//3. Ситуация: У вас есть массив чисел, и вам нужно отсортировать его в порядке возрастания.​
+const numbers = [5, 3, 8, 1, 4];
+console.log(numbers.sort());
+
+//4. Ситуация: У вас есть массив чисел, и вам нужно вычислить их сумму.​
+const numbersSum = [10, 20, 30, 40, 50];
+console.log(numbersSum.reduce((acc, el) => acc + el, 0));
+
+//5. Ситуация: Вы разрабатываете приложение для управления ​задачами. Вам нужно создать список дел и реализовать ​несколько функций для работы с ним.​
+const tasks = [
+  "Купить продукты",
+  "Сделать домашнее задание",
+  "Позвонить другу",
+];
+console.log(tasks.length);
+
+tasks.push("Убраться в комнате");
+
+//6. Ситуация: Вы разрабатываете систему фильтрации сообщений, и вам нужно проверить, содержит ли сообщение какое-либо из запрещённых слов.​
+const forbiddenWords = ["spam", "advertisement", "scam"];
+const message = "This is a spam message";
+console.log(forbiddenWords.some((word) => message.includes(word)));
+forbiddenWords.shift();
+console.log(forbiddenWords);
